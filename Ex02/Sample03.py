@@ -34,9 +34,11 @@ def isosChecker(tup):
 def checker(givenList: list) -> None:
     
     for tup in givenList:
-        if eqT(tup):
-            print(True)
-        elif eqT(tup) != True and isosT(tup):
+        # if eqT(tup):
+        #     print(True)
+        # elif eqT(tup) != True and isosT(tup):
+        #     print(isosChecker(tup))
+        if isosT(tup):
             print(isosChecker(tup))
         else:
             first = biggest(tup)
