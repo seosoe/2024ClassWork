@@ -16,12 +16,11 @@ def str2num(word:str) -> int:
     for ele in word:
         if ele in vowels:
             result = result + vowels[ele]
-        elif chr(ord(ele) + 32) in vowels:
+        elif chr( ord(ele) + 32) in vowels:
             result = result + vowels[chr(ord(ele) + 32)]
 
     return result
 
-print(chr(ord('A') + 32))
 
 def findBiggest(temp:list) -> str:
     '''
@@ -53,5 +52,8 @@ def findSmallest(temp:list) -> str:
     return r2
 
 
+####################TEST####################
+
+print(chr(ord('A') + 32))
 print(findSmallest(names))
 print(findBiggest(names))

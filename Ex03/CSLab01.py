@@ -26,7 +26,7 @@ def finder01(target : dict) -> str:
     for each in range(0, len(ageL)):
         if result == ageL[each]:
             r = resultList[each]
-    return r
+    return r + ": " +target[r]
 
 
 print(finder01(d))
@@ -40,7 +40,7 @@ def finder02(target : dict) -> str:
     for each in range(0, len(ageL)):
         if result == ageL[each]:
             r = resultList[each]
-    return r
+    return r + ": " +target[r]
 
         
 print(finder02(d))
