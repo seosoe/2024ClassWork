@@ -11,10 +11,14 @@ lowerCase = lower()
 upperCase = upper()
 mix = lambda:list(lowerCase[index] if random.randint(1,2) == 1 else upperCase[index] for index in range(26))
 TARGET = mix()
-# print(TARGET)
+print(TARGET)
 
 repLower = lambda:list(each if 65 <= ord(each) <= 91 else chr(ord(each) - 32) for each in TARGET)
 print(repLower())
 
 repUpper = lambda:list(each if 97 <= ord(each) <= 123 else chr(ord(each)+32) for each in TARGET)
 print(repUpper())
+
+
+repEach = lambda:list((chr(ord(each) - 32)) if 97 <= ord(each) <= 123 else chr(ord(each)+32) for each in TARGET)
+print(repEach())
