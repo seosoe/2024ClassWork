@@ -8,7 +8,7 @@ window.title("Roll A Dice")  # window name
 window.geometry("2000x2000")  # size
 
 # 처음 이미지를 위한 Label 생성
-photo = PhotoImage(file="~/Documents/2024ClassWork/FINAL/9590096.png")
+photo = PhotoImage(file="./FINAL/9590096.png")
 pp = Label(window, image=photo)
 
 pp.pack()
@@ -17,7 +17,7 @@ pp.pack()
 def randomInt():
     
     # randomImage = PhotoImage(file="~/Documents/2024ClassWork/FINAL/dice-152174_640.png")
-    randomImage = PhotoImage(file="~/Documents/2024ClassWork/FINAL/" + str(randint(1, 6)) + ".png")
+    randomImage = PhotoImage(file="./FINAL/" + str(randint(1, 6)) + ".png")
     pp.config(image=randomImage)
     pp.image = randomImage  # 이미지를 유지하기 위해 필요
 
